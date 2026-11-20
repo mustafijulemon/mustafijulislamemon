@@ -41,3 +41,12 @@ The contact form validates inputs and opens the visitor's default email applicat
 ## Visual design
 
 The `src/colorful.css` layer adds the coordinated colour palette, gradient hero, section accents, polished cards, and responsive colour treatments. It is imported after the base, polish, and motion stylesheets so the visual theme remains consistent across the site.
+
+
+## Recent portfolio update
+
+- Added the **Debating Club of BUBT — Official Website** as a featured project.
+- Added the live project URL: https://bubtdc-website.vercel.app/ (shown as **Visit Official Website**).
+- Added a dedicated mobile refinement stylesheet for phone-first layout, navigation, touch targets, galleries, project filters, and contact fields.
+
+Deploy on Vercel with the default Vite settings: `npm run build` and output directory `dist`.

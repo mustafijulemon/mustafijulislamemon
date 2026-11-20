@@ -64,7 +64,7 @@ export default function Projects() {
                   {project.year && <span className="project-year">{project.year}</span>}
                   {project.links.demo && (
                     <a href={project.links.demo} target="_blank" rel="noreferrer">
-                      Live Demo <ArrowUpRight size={15} />
+                      {project.links.demoLabel ?? "Live Demo"} <ArrowUpRight size={15} />
                     </a>
                   )}
                   {project.links.repo && (

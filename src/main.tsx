@@ -4,6 +4,7 @@ import './index.css'
 import './polish.css'
 import './motion.css'
 import './colorful.css'
+import './mobile.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(

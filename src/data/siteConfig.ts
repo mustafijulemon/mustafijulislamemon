@@ -96,10 +96,22 @@ export type Project = {
   category: "web" | "mobile" | "design" | "tooling";
   year?: string;
   featured?: boolean;
-  links: { demo?: string; repo?: string };
+  links: { demo?: string; demoLabel?: string; repo?: string };
 };
 
 export const projects: Project[] = [
+  {
+    title: "Debating Club of BUBT — Official Website",
+    tagline: "Website Developer · Student Leadership & Digital Presence",
+    description: "Designed and developed the official website of the Debating Club of BUBT, contributing to the club’s digital presence and online identity.",
+    tags: ["Official Club Website", "Web Development", "BUBTDC"],
+    category: "web",
+    featured: true,
+    links: {
+      demo: "https://bubtdc-website.vercel.app/",
+      demoLabel: "Visit Official Website",
+    },
+  },
   {
     title: "BUBT Smart Management",
     tagline: "Software Development Project 1",

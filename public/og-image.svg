@@ -1,10 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#ffffff"/>
-  <rect x="0" y="0" width="18" height="630" fill="#174a7e"/>
-  <text x="100" y="175" fill="#174a7e" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">PROFESSIONAL PORTFOLIO</text>
-  <text x="100" y="275" fill="#172b43" font-family="Arial, sans-serif" font-size="62" font-weight="700">Mustafijul Islam Emon</text>
-  <text x="100" y="345" fill="#174a7e" font-family="Arial, sans-serif" font-size="29" font-weight="600">CSE Student · Software Developer</text>
-  <text x="100" y="395" fill="#174a7e" font-family="Arial, sans-serif" font-size="29" font-weight="600">President, Debating Club of BUBT</text>
-  <line x1="100" y1="455" x2="1100" y2="455" stroke="#e4e7ec" stroke-width="2"/>
-  <text x="100" y="510" fill="#667085" font-family="Arial, sans-serif" font-size="21">Dhaka, Bangladesh</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151b49"/><stop offset=".55" stop-color="#302269"/><stop offset="1" stop-color="#124c69"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8ff0e9"/><stop offset=".45" stop-color="#7bc8ff"/><stop offset="1" stop-color="#ffd16e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="270" fill="#19b8cf" opacity=".12"/>
+  <circle cx="85" cy="590" r="250" fill="#ff7185" opacity=".10"/>
+  <path d="M0 0h18v630H0z" fill="url(#accent)"/>
+  <g fill="none" stroke="#fff" opacity=".12"><circle cx="1015" cy="300" r="190"/><circle cx="1015" cy="300" r="225"/><circle cx="1015" cy="300" r="260"/></g>
+  <text x="100" y="150" fill="#a8d9ff" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">PERSONAL PORTFOLIO</text>
+  <text x="96" y="265" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">Mustafijul Islam Emon</text>
+  <text x="100" y="345" fill="url(#accent)" font-family="Arial,sans-serif" font-size="30" font-weight="700">CSE Student · Software Developer</text>
+  <text x="100" y="398" fill="#d5d8f2" font-family="Arial,sans-serif" font-size="27" font-weight="600">President, Debating Club of BUBT</text>
+  <rect x="100" y="455" width="610" height="3" rx="2" fill="url(#accent)"/>
+  <text x="100" y="520" fill="#c4c9eb" font-family="Arial,sans-serif" font-size="21">Technology · Communication · Leadership</text>
+  <text x="100" y="558" fill="#9fa9d6" font-family="Arial,sans-serif" font-size="18">Dhaka, Bangladesh</text>
 </svg>

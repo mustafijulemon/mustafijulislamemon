@@ -1,6 +1,6 @@
 # Mustafijul Islam Emon — Professional Portfolio
 
-A responsive React + TypeScript portfolio built with Vite. The site includes a refined visual system, animated hero, rotating role text, scroll progress, active navigation, scroll-triggered reveals, interactive project filters, image galleries, achievements, leadership experience, and contact links.
+A responsive React + TypeScript portfolio built with Vite. The site includes a vibrant professional visual system (indigo, electric blue, cyan, mint, coral, and amber), animated hero, rotating role text, scroll progress, active navigation, scroll-triggered reveals, interactive project filters, image galleries, achievements, leadership experience, and contact links.
 
 ## Run locally
 
@@ -37,3 +37,7 @@ Motion is implemented with CSS and IntersectionObserver. Reduced-motion preferen
 ## Contact form
 
 The contact form validates inputs and opens the visitor's default email application because `formEndpoint` is currently blank. Configure a trusted form endpoint in `src/data/siteConfig.ts` to enable direct submission.
+
+## Visual design
+
+The `src/colorful.css` layer adds the coordinated colour palette, gradient hero, section accents, polished cards, and responsive colour treatments. It is imported after the base, polish, and motion stylesheets so the visual theme remains consistent across the site.

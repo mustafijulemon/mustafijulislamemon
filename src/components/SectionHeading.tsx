@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 type Props = {
   eyebrow: string;
   title: string;
@@ -7,10 +9,12 @@ type Props = {
 
 export default function SectionHeading({ eyebrow, title, accent, subtitle }: Props) {
   return (
-    <div className="section-heading">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}{accent ? <> <span>{accent}</span></> : null}</h2>
-      {subtitle && <p className="section-subtitle">{subtitle}</p>}
-    </div>
+    <Reveal className="section-heading-reveal" y={18}>
+      <div className="section-heading">
+        <p className="eyebrow">{eyebrow}</p>
+        <h2>{title}{accent ? <> <span>{accent}</span></> : null}</h2>
+        {subtitle && <p className="section-subtitle">{subtitle}</p>}
+      </div>
+    </Reveal>
   );
 }

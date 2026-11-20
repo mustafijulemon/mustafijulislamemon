@@ -1,10 +1,12 @@
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { publicSpeakingWorkshopPhotos, workshopPhotos } from "../data/siteConfig";
 
 type WorkshopPhoto = { image: string; caption: string };
 
 function PhotoGallery({ photos }: { photos: readonly WorkshopPhoto[] }) {
   return (
+    <Reveal className="gallery-reveal">
     <div className="photo-gallery">
       {photos.map((photo) => (
         <figure className="photo-card" key={photo.image}>
@@ -15,6 +17,7 @@ function PhotoGallery({ photos }: { photos: readonly WorkshopPhoto[] }) {
         </figure>
       ))}
     </div>
+    </Reveal>
   );
 }
 

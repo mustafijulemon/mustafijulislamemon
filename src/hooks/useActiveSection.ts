@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 export function useActiveSection(ids: string[]) {
   const [active, setActive] = useState(ids[0] ?? "");
 
+  const idsKey = ids.join("|");
+
   useEffect(() => {
     const elements = ids
       .map((id) => document.getElementById(id))
@@ -23,7 +25,7 @@ export function useActiveSection(ids: string[]) {
 
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [ids]);
+  }, [idsKey]);
 
   return active;
 }

@@ -1,4 +1,5 @@
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { pressCoverage } from "../data/siteConfig";
 
 export default function PressCoverage() {
@@ -11,6 +12,7 @@ export default function PressCoverage() {
           accent="Coverage"
           subtitle="Selected newspaper features on my debate and public-affairs work."
         />
+        <Reveal className="press-reveal">
         <div className="press-grid">
           {pressCoverage.map((item) => (
             <article className="press-card" key={item.publisher}>
@@ -21,6 +23,7 @@ export default function PressCoverage() {
             </article>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

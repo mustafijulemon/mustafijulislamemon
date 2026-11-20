@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { about, education, siteConfig } from "../data/siteConfig";
 
@@ -13,6 +14,7 @@ export default function About() {
           subtitle={about.body}
         />
 
+        <Reveal className="about-layout-reveal">
         <div className="about-layout">
           <div className="about-biography">
             <h3>{about.headline}</h3>
@@ -42,6 +44,7 @@ export default function About() {
             ))}
           </aside>
         </div>
+        </Reveal>
       </div>
     </section>
   );

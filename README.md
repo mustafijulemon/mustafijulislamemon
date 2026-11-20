@@ -1,23 +1,8 @@
 # Mustafijul Islam Emon — Professional Portfolio
 
-A clean, responsive personal portfolio built with React, TypeScript and Vite.
+A responsive React + TypeScript portfolio built with Vite. The site includes a refined visual system, animated hero, rotating role text, scroll progress, active navigation, scroll-triggered reveals, interactive project filters, image galleries, achievements, leadership experience, and contact links.
 
-## Included sections
-
-- Home and profile summary
-- About and education
-- Professional experience and leadership
-- Technical skills
-- Academic and personal projects
-- Achievements and awards
-- National TV debate, debate events and leadership roles
-- Workshops and public speaking sessions
-- Press coverage
-- Contact details, social profiles and message form
-
-All portfolio content is maintained in `src/data/siteConfig.ts`. Public images are stored in `public/`.
-
-## Local development
+## Run locally
 
 ```bash
 npm install
@@ -33,13 +18,22 @@ npm run preview
 
 ## Deploy to Vercel
 
-Import this repository into Vercel. The default Vite build settings are sufficient:
-
-- Build command: `npm run build`
-- Output directory: `dist`
-
-The site is configured for client-side routing fallback in `vercel.json`.
+1. Upload the contents of this project folder to the root of a GitHub repository. `package.json`, `index.html`, `src/`, and `public/` must be at the repository root.
+2. Import the repository in Vercel.
+3. Use the Vite defaults or keep the included `vercel.json` settings:
+   - Build command: `npm run build`
+   - Output directory: `dist`
+   - Install command: `npm install`
+4. Deploy.
 
 ## Content updates
 
-Edit `src/data/siteConfig.ts` to update the profile details, education, skills, projects, achievements, experience, image galleries, contact information and social links. Place any new gallery images in the appropriate directory under `public/` and update the matching image path in `siteConfig.ts`.
+Portfolio text, roles, projects, achievements, photos, experience, education, social profiles, and contact details are maintained in `src/data/siteConfig.ts`. Public images are organized under `public/`.
+
+## Motion and accessibility
+
+Motion is implemented with CSS and IntersectionObserver. Reduced-motion preferences are respected through `prefers-reduced-motion`; core content remains available without animation.
+
+## Contact form
+
+The contact form validates inputs and opens the visitor's default email application because `formEndpoint` is currently blank. Configure a trusted form endpoint in `src/data/siteConfig.ts` to enable direct submission.

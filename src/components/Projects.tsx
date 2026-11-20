@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { ArrowUpRight, FolderGit2 } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { projects, type Project } from "../data/siteConfig";
 
 type Filter = "all" | Project["category"];
@@ -44,6 +45,7 @@ export default function Projects() {
           ))}
         </div>
 
+        <Reveal className="projects-reveal">
         <div className="projects-grid">
           {visible.map((project) => (
             <article className="project-card" key={project.title}>
@@ -76,6 +78,7 @@ export default function Projects() {
             </article>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

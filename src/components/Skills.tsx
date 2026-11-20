@@ -1,5 +1,6 @@
 import { Code2, Layout, Server, Wrench, type LucideIcon } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { skillGroups } from "../data/siteConfig";
 
 const groupIcons: Record<string, LucideIcon> = {
@@ -19,6 +20,7 @@ export default function Skills() {
           accent="Technologies"
           subtitle="Programming languages, frameworks, databases, tools, and research technologies."
         />
+        <Reveal className="skills-reveal">
         <div className="skills-grid">
           {skillGroups.map((group) => {
             const Icon = groupIcons[group.icon] ?? Code2;
@@ -35,6 +37,7 @@ export default function Skills() {
             );
           })}
         </div>
+        </Reveal>
       </div>
     </section>
   );

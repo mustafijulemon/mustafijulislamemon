@@ -1,5 +1,6 @@
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { experiences } from "../data/siteConfig";
 
 export default function Experience() {
@@ -13,6 +14,7 @@ export default function Experience() {
           subtitle="Professional roles, student leadership, competitive programming, debate, and event organisation."
         />
 
+        <Reveal className="experience-reveal">
         <div className="experience-list">
           {experiences.map((exp) => (
             <article className="experience-item" key={`${exp.role}-${exp.company}`}>
@@ -33,6 +35,7 @@ export default function Experience() {
             </article>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

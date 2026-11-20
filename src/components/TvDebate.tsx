@@ -1,4 +1,5 @@
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import {
   debateEventRoles,
   interDepartmentDebatePhotos,
@@ -10,6 +11,7 @@ type DebatePhoto = { image: string; caption: string };
 
 function PhotoGallery({ photos }: { photos: readonly DebatePhoto[] }) {
   return (
+    <Reveal className="gallery-reveal">
     <div className="photo-gallery">
       {photos.map((photo) => (
         <figure className="photo-card" key={photo.image}>
@@ -20,6 +22,7 @@ function PhotoGallery({ photos }: { photos: readonly DebatePhoto[] }) {
         </figure>
       ))}
     </div>
+    </Reveal>
   );
 }
 
@@ -62,6 +65,7 @@ export default function TvDebate() {
             accent="& Responsibilities"
             subtitle="Mentoring, adjudicating, and competing—my role varies from event to event."
           />
+          <Reveal className="role-gallery-reveal">
           <div className="role-gallery">
             {debateEventRoles.map((item) => (
               <article className="role-card" key={item.event}>
@@ -75,6 +79,7 @@ export default function TvDebate() {
               </article>
             ))}
           </div>
+          </Reveal>
         </div>
       </div>
     </section>

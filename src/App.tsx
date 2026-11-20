@@ -11,6 +11,8 @@ import PressCoverage from "./components/PressCoverage";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollProgress from "./components/ScrollProgress";
+import ScrollToTop from "./components/ScrollToTop";
 import { siteConfig } from "./data/siteConfig";
 
 export default function App() {
@@ -22,6 +24,7 @@ export default function App() {
 
   return (
     <div className="site-shell">
+      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />
@@ -36,6 +39,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

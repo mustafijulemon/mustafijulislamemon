@@ -1,5 +1,6 @@
 import { Award, Code2, Crown, GraduationCap, Megaphone, Trophy } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { achievements } from "../data/siteConfig";
 
 function AchievementIcon({ category }: { category: string }) {
@@ -21,6 +22,7 @@ export default function Achievements() {
           accent="Awards"
           subtitle="Academic performance, competitive programming results, national debate recognition, and student leadership."
         />
+        <Reveal className="achievements-reveal">
         <div className="achievements-grid">
           {achievements.map((item) => (
             <article className="achievement-item" key={item.title}>
@@ -34,6 +36,7 @@ export default function Achievements() {
             </article>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

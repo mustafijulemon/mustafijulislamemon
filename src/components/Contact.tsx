@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { Check, Mail, MapPin, Phone, Send } from "lucide-react";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 import { brandIcons } from "./BrandIcons";
 import { siteConfig } from "../data/siteConfig";
 
@@ -67,6 +68,7 @@ export default function Contact() {
           subtitle="For projects, professional opportunities, collaboration, debate, or general enquiries, please feel free to get in touch."
         />
 
+        <Reveal className="contact-reveal">
         <div className="contact-layout">
           <div className="contact-information">
             <h3>Contact Information</h3>
@@ -125,6 +127,7 @@ export default function Contact() {
             <p className="form-hint">{siteConfig.formEndpoint ? "Your message will be sent securely." : "Submitting opens your default email application with the message prepared."}</p>
           </form>
         </div>
+        </Reveal>
       </div>
     </section>
   );
